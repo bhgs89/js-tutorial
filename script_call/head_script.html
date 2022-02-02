@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append basic JS at head tag</title>
+
+    <!--       
+      head tag에 basic script 호출
+      - DOM 생성 과정
+          -> Parsing HTML 
+          -> Meet <script> tag 
+          -> Stop parsing HTML
+          -> Download JS script      
+          -> Execute JS script     
+          -> Parsing HTML
+          -> End
+      - 문제점
+          Script file이 너무 크거나 인터넷이 느린 환경이라면 JS script를 다운받는동안 Browser화면이 멈춰있는다
+    -->
+    <script src="main.js"></script>
+    
+  </head>
+  <body></body>
+</html>

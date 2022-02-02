@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append asyn JS at head tag</title>
+
+    <!--       
+      head tag에 asyn script 호출
+      - DOM 생성 과정
+          -> Parsing HTML 
+          -> Meet <asyn script> tag - Download JS script(Not stop parsing HTML)          
+          -> Parsing HTML
+          -> When complete download JS script - Execute JS script(Stop parsing HTML)
+          -> When complete execute JS script - Continue parsing HTML
+          -> End
+      - 장점
+          병렬적으로 JS script를 다운 받고, 실행하기 때문에, 빠르게 화면을 표시할 수 있다
+      - 문제점
+          1. HTML을 전부 Parsing하기 전에 JS script를 다운 받고 실행하는 경우,
+            parsing되지 않을 부분의 HTML을 사용하는 JS code는 실패하기 때문에 문제가 발생할 수 있다
+          2. JS script 다운이 완료되면, Parsing HTMl을 멈추고 JS script를 실행하기 때문에, JS script 실행이 오래걸리면 화면이 멈출 위험이 있다
+          3. 여러 JS script를 다운 받을 경우, script가 작성한 순서와 상관없이 먼저 다운 받아진 script를 실행한다  
+    -->
+    <script asyn src="main.js"></script>
+
+  </head>
+  <body></body>
+</html>

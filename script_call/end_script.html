@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append basic JS at end of body tag</title>    
+  </head>
+  <body>
+
+    <!-- 
+      body tag 맨 마지막에 basic script 호출
+      - DOM 생성 과정
+          -> Parsing HTML 
+          -> Complete parsing HTML
+          -> Download JS script 
+          -> Execute JS script 
+          -> End
+      - 문제점
+          Script를 다운받기전에 parsing된 HTML이 Browser화면에 출력되지만,
+          웹사이트가 JS에 의존적인 사이트라면, 사용자가 JS를 적용하지 못한 잘못된 화면을 보게된다
+    -->
+    <script src="main.js"></script>
+
+  </body>
+</html>
