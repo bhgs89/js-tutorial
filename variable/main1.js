@@ -1,7 +1,7 @@
 // Variable
 'use strict';
 
-///// 1. let /////
+///// 1. let(rw) /////
 //  - Added in ES6
   let name = "han";
   console.log(name);
@@ -27,7 +27,7 @@
   console.log(name3);
   
 
-///// 2. var /////
+///// 2. var(rw) /////
 //  - Var hoisting에 의해, 선언 되기 전에 변수에 할당할 수 있다 (너무 자유롭다)
 //  - Var hoisting: 변수가 어디에서 선언되었든 제일 처음으로 끌어올려지는 것
   console.log("-----------");
@@ -45,9 +45,16 @@
   console.log(age2)
 
 
-///// 3. const /////
+///// 3. const(r) /////
 //  - 변수를 선언하는 동시에 값을 할당한다
 //  - 한번 할당된 값을 변경이 불가능 하다
 //  - 장점: Security(안전), Thread safety, Reduce human mistakes
   const daysInWeek = 7;
   const maxNum = 5;
+
+
+///// Mutable data type /////
+//  - all objects by default
+
+///// Immutable data type /////
+//  - Primitive types, frozen objects(object.freeze())

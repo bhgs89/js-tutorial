@@ -98,7 +98,7 @@ console.log("-----------");
   console.log("-----------");
   const han = { name: 'Han', age: 32 };
 
-  
+
 ///// 8. function /////
 //  - Primitive
 //  - first class function
