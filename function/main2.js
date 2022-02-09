@@ -70,3 +70,29 @@ console.log('---------------');
 (function hello() {
   console.log('IIFE');
 })();
+console.log('---------------');
+
+
+///// Example /////
+//  command: add, substract, divide, multiply, remainder
+function calculate(command, a, b) {
+  return command(a, b);
+}
+function addNumbers(a, b) {
+  return a + b;
+}
+const substractNumbers = function(a, b) {
+  return a - b;
+}
+const divideNumbers = function divide(a, b) {
+  return a / b;
+}
+const multiplyNumbers = (a, b) => a * b;
+const remainderNumbers = (a, b) => {
+  return a % b;
+}
+console.log(calculate(addNumbers, 1, 2));
+console.log(calculate(substractNumbers, 1, 2));
+console.log(calculate(divideNumbers, 4, 2));
+console.log(calculate(multiplyNumbers, 2, 3));
+console.log(calculate(remainderNumbers, 5, 2));

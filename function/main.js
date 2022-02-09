@@ -40,7 +40,7 @@ console.log('---------------');
 function showMessage(message, from = 'unknown') {
   console.log(`${message} by ${from}`);
 }
-showMessgae('Hi!');
+showMessage('Hi!');
 console.log('---------------');
 
 
@@ -59,7 +59,7 @@ function printAll(...args) {
     console.log(e);
   });
 }
-printfAll('dream', 'coding', 'han');
+printAll('dream', 'coding', 'han');
 console.log('---------------');
 
 
